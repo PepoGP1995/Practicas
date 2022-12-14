@@ -1,27 +1,45 @@
 #include <iostream>
-
+#include <String>
 using namespace std;
+/*Funcion suma*/
+int suma(int a, int b)
+{
+    int c = a + b;
+    return c;
+}
+int multiplicacion(int a, int b = 4)
+{
+    int c = a * b;
+    return c;
+}
 
 int main()
+
 {
+    string texto = "Hola Mundo";
+    string numero= "10.5";
+    cout << stof(numero)+24.5;
 
+    // cout << texto.size(); // Size para saber numero de caracteres
 
+    /* FUNCIONES
 
+    cout<< suma(3,5)<< endl;
+    cout<<multiplicacion(5);
+    */
 
-
-/* While Do While
-do {
-    char answer;
-    cout << "Do you want to finish (y) or (n)? " << endl;
-    cin >> answer;
-    if (answer == 'y')
-    {
-        cout << "See you later ";
-        break;
-    }
-} while (true);
-*/
-    
+    /* While Do While
+    do {
+        char answer;
+        cout << "Do you want to finish (y) or (n)? " << endl;
+        cin >> answer;
+        if (answer == 'y')
+        {
+            cout << "See you later ";
+            break;
+        }
+    } while (true);
+    */
 
     /*For Pares  int i = 0;
       int lista[] = {5, 8, 20, 3 , 6, 7, 1, 98, 95, 20};
