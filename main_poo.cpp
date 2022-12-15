@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
+/* estructura persona*/
 struct Persona
 {
     string nombre;
@@ -8,8 +9,26 @@ struct Persona
 };
 int main()
 {
+   
+   
     /*Uniones y enumeraciones*/
-    
+
+    /*Enumeraciones
+    enum dias_semana {lunes='l', martes='m', miercoles='c', jueves='j', viernes='v', sabado='s', domingo='d'};
+    dias_semana dia=domingo;
+    cout << (char)dia;*/
+
+    /* Uniones Ahorra espacio de memoria
+    union numero_letra
+     {
+      int numero;
+      char letra;
+     };
+     numero_letra x={'A'};
+     cout << "x como un numero " <<(char) x.numero << endl;
+     cout << "x como un numero " << (int) x.letra;
+     */
+
     /*Estructuras de datos en C+
 
     // Persona p= Persona(); espacio tipo persona estructura
