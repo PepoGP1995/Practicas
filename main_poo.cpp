@@ -2,15 +2,30 @@
 #include <string>
 using namespace std;
 /* estructura persona*/
-struct Persona
+/*struct Persona
 {
     string nombre;
     int edad;
+};*/
+
+class Persona
+{
+public:
+    string nombre = "Diana";
+    int edad = 26;
+    void saludar(){
+        cout << "Hola mi nombre es "<<nombre <<endl;
+    }
 };
+
 int main()
 {
-   
-   
+    /*POO*/
+    Persona *p = new Persona();
+    Persona *p2= new Persona();
+    p2-> nombre="Juan";
+    p->saludar();
+    p2->saludar();
     /*Uniones y enumeraciones*/
 
     /*Enumeraciones
@@ -55,7 +70,9 @@ int main()
 
     */
 
-    /* Utilización de Punteros
+    /* Utilización de Punteros Memoria dinamica =! Memoria estatica 
+    La memoria se reserva mientras se ejecuta el programa
+
     char letra= 'A';
     char *puntero=&letra;
     cout << (int *) &letra << endl;
